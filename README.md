@@ -42,7 +42,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ### About the project
 
 ## Technology : 
-  **Tailwindcss
-  **Reactjs
-  **Recoil
+  # Tailwindcss
+  # Reactjs
+  # Recoil
 
