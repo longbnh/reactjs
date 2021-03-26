@@ -11,6 +11,7 @@ export const addToCart = (product, cart, amount) => {
     (itemInCart) => itemInCart.id === product.id // trả về
   );
   if (index < 0) {
+    // product = JSON.parse(product);
     product.amount = amount;
     newCart.push(product);
     return newCart;

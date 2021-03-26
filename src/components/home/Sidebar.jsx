@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import { useRecoilValue } from "recoil";
-import { listProductSearch } from "../../store/product/ProductState";
+// import { useRecoilValue } from "recoil";
+// import { listProductSearch } from "../../store/product/ProductState";
 //Render
 const Sidebar = () => {
   const country = ["USA", "Russia", "China", "Iraq"];

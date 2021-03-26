@@ -9,7 +9,7 @@ import { addToCart, cartState } from "../../store/cart/CartState";
 const ProductDetail = () => {
   let param = useParams();
   const product = useRecoilValue(productState).find(
-    (item) => item.id == param.id
+    (item) => item.id === parseInt(param.id)
   );
 
   const [cart, setCart] = useRecoilState(cartState); //use STATE
@@ -20,7 +20,6 @@ const ProductDetail = () => {
     let newCart = addToCart(product, currentCart, amount);
     setCart(newCart);
   };
-
   const [amount, setAmount] = useState(1);
 
   const validAmount = (e) => {
@@ -56,7 +55,7 @@ const ProductDetail = () => {
               className="border border-r-0 w-7 rounded-sm border-black focus:outline-none hover:bg-gray-300"
               onClick={minusAmount}
             >
-              <i class="fa fa-minus"></i>
+              <i className="fa fa-minus"></i>
             </button>
             <input
               type="text"
@@ -70,7 +69,7 @@ const ProductDetail = () => {
               className="border border-l-0 w-7 rounded-sm border-black focus:outline-none hover:bg-gray-300"
               onClick={addAmount}
             >
-              <i class="fa fa-plus"></i>
+              <i className="fa fa-plus"></i>
             </button>
           </div>
         </div>

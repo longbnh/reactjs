@@ -7,7 +7,7 @@ const CartPage = () => {
   return (
     <>
       <Header />
-      {/* <Cart /> */}
+      <Cart />
       <Footer />
     </>
   );
